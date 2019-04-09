@@ -15,7 +15,6 @@
     }
   }
 */
-
 var bars = document.getElementsByClassName("bar");
 console.log(bars);
 for(let i = 0, length1 = bars.length; i < length1; i++){
@@ -29,11 +28,6 @@ for(let i = 0, length1 = bars.length; i < length1; i++){
     } else {
       width++; 
       bars[i].style.width = width + '%'; 
-      console.log(i);
-      console.log(width);
-      console.log(max);
     }
   }
-
-
 }

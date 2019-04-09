@@ -5,7 +5,9 @@ define table structure to hold
 	skill descriptions from dwarf fortress
 		novice
 		dabbling
+		competent
 		adept
+		expert
 		accomplished
 		master
 		high master
@@ -17,7 +19,6 @@ define table structure to hold
 	education cards
 		Certification, Institute, Year, Img
 
-
 	experience cards
 
 links to subject definitions / screenshots for HDs
@@ -28,4 +29,36 @@ make a github page
 make the static resume one of the project links on github landing page.
 	both pages must be responsive
 
+
+HDs
+Final Capstone Project (LAMP/Full Stack)
+https://www.qut.edu.au/study/unit?unit=IFB399
+
+Business Process Modelling (BPMN2)
+https://www.qut.edu.au/study/unit?unit=IAB203
+
+Microprocessors and Digital Systems (C)
+https://www.qut.edu.au/study/unit?unit=CAB202
+
+Programming Principles (C#)
+https://www.qut.edu.au/study/unit?unitCode=CAB201
+
+
+Distinctions:
+Enterprise Architecture (UML)
+https://www.qut.edu.au/study/unit?unitCode=IAB401
+
+Modelling Information Systems (UML)
+https://www.qut.edu.au/study/unit?unitCode=IAB201
+
+Business of Information Technology
+https://www.qut.edu.au/study/unit?unitCode=IAB202
+
+Project Management (Agile)
+https://www.qut.edu.au/study/unit/outline?unitCode=IAB304&year=2018&teachingPeriod=SEM-1&unitVersion=1&outlineVersion=5
+OR
+https://www.qut.edu.au/study/unit?unitCode=IFB295 -  Anti-requisites IAB304
+
+Building IT Systems (Python)
+https://www.qut.edu.au/study/unit?unitCode=IFB104
 

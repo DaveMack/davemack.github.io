@@ -23,8 +23,6 @@ img{
 	width: 90%;
 	min-width: 500px;
 	margin: auto;
-	border: 1px solid black;
-	border-radius: 9px;
 }
 
 .name{
@@ -157,11 +155,26 @@ img{
 	grid-template-columns: 1fr 5fr 1fr;
 }
 
-
 .edu-detail div{
 	display: inline;
 	padding: 5px;
 	margin: 5px;
+}
+
+.education a{
+	text-decoration: none;
+	color: #00f;
+	font-weight: 800;
+}
+.edu-detail a{
+	color: #000;
+}
+
+.achievements a{
+	display: block;
+	text-decoration: none;
+	color: #00o;
+	font-weight:600;
 }
 
 .edu-detail #year{
@@ -219,4 +232,5 @@ img{
   width: 1%;
   height: 30px;
   background-color: green;
+  transition: width 1s ease-in-out;
 }
