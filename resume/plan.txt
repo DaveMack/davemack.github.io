@@ -1,0 +1,31 @@
+define table structure to hold 
+	skill levels
+		name, ranking, img
+
+	skill descriptions from dwarf fortress
+		novice
+		dabbling
+		adept
+		accomplished
+		master
+		high master
+		legendary
+
+	project cards
+		name, img, description, github repo
+
+	education cards
+		Certification, Institute, Year, Img
+
+
+	experience cards
+
+links to subject definitions / screenshots for HDs
+
+make a github page
+ 	add it to pdf resume
+
+make the static resume one of the project links on github landing page.
+	both pages must be responsive
+
+

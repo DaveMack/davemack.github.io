@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body{
+	background-color: #fff;
+	padding: 5px;
+	margin: 5px;
+}
+
+img{
+	max-height: 32px;
+}
+
+
+.clr{
+	clear: both;
+}
+
+.container{
+	width: 90%;
+	min-width: 500px;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 9px;
+}
+
+.name{
+	background-color: #fff;
+	float: left;
+	box-sizing: border-box;	
+	padding: 10px;
+}
+
+.colourBlock{
+	background-color: blue;
+	width: 100%;
+	min-height: 50px;
+}
+
+.top{
+	background-color: blue;
+	overflow: hidden;
+}
+
+.topleft{
+	float: left;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;		
+}
+
+.topleft h1{
+	padding: 0 5px;
+	background-color: #fff;
+}
+
+.topright{
+	float: left;
+	display: inline;
+}
+
+
+.menu{
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	overflow: hidden;
+	justify-items: start;
+	padding: 5px;
+	margin: 5px;	
+
+}
+
+.menu h3{
+}
+
+.menuItem{
+	min-width: 250px;
+	vertical-align: center;
+}
+
+.icons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(150px, auto);
+	justify-items: end;
+	align-items: start;
+	max-height: 40px;
+}
+
+.icon{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: start;
+	min-width: 150px;
+}
+
+.icon > div{
+}
+
+.icon img{
+	height: 32px;
+	width: 32px;
+	padding-right: 5px;
+	align-self: center;
+}
+
+.icon p{
+	float: left;
+	color: #000;
+	align-self: center;
+  white-space: nowrap; 	
+  overflow: hidden;
+  text-overflow: clip;
+	font-size: 10pt;
+}
+
+.title img{
+	float: left;
+	margin: 0;
+	box-sizing: border-box;		
+}
+
+.title h2{
+	display: inline-block;
+	margin: 0;
+	box-sizing: border-box;		
+	border-bottom: solid 2px #000;
+
+}
+
+#summary{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 9px;
+	background-color: #eee;
+}
+
+#both{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+
+.edu-entry{
+	padding: 5px;
+	margin: 5px;	
+	border: 1px solid black;
+	border-radius: 9px;
+	background-color: #eee;
+}
+.edu-detail{
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+}
+
+
+.edu-detail div{
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+}
+
+.edu-detail #year{
+	color: #000;
+}
+.edu-detail p{
+	color: blue;
+}
+
+
+.exp-entry{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 9px;
+	background-color: #eee;
+}
+
+.exp-entry #jobtitle{
+	color: blue;
+}
+
+.leftbit{
+	padding: 5px;
+	text-align: center;
+	vertical-align: center;	
+	min-width: 100px;
+}
+.rightbit{
+	padding: 5px;
+}
+.exp-entry img{
+	max-width: 100px;
+	padding-top: 1em;
+}
+
+.skills .wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 9px;
+	background-color: #eee;
+}
+
+.progress {
+  width: 100%;
+  background-color: grey;
+}
+
+.bar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
