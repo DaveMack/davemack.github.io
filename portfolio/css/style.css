@@ -48,6 +48,11 @@ main{
 	padding-left: 1rem;
 }
 
+#landingTextInner{
+	min-width: 300px;
+	white-space: nowrap; 
+}
+
 #landingText h2{
 	color: #888;
 }

@@ -4,72 +4,69 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>David Mackenzie Landing Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/new.css">
 </head>
 <body>
-	<main>
-		<div id="landing">
-			<div id="landingText">
-				<div id="landingTextInner">
-					<h1>David Mackenzie</h1>
-					<h2>Junior Developer</h2>
-					<a href="./resume/index.html" class="btn" id="viewWork">View Resume</a>
-				</div>
+	<header class="showcase">
+		<div class="content">
+			<img src="img/lightring.png" class="logo"></img>
+			<div class="title">
+				DAVID MACKENZIE
 			</div>
-			<div id="landingImage"></div>
+			<div class="text">
+				Here you can find my resume, contact details and a portfolio of my work.
+			</div>
+			
+		</div>
+	</header>
 
+	<!-- Resume	-->
+	<section class="menu">
+		<div class="container grid-3 center">
+			<a href="./resume/index.html" target="_blank" class="btn">
+				<i class="fas fa-user-tie fa-3x"></i>
+				<h3>Resume</h3>
+				<p><i class="fab fa-html5 fa-2x"></i> + <i class="fab fa-css3-alt fa-2x"></i> + <i class="fab fa-js fa-2x"></i>	</p>
+			</a>
+
+			<a href="./portfolio/index.html" target="_blank" class="btn">
+			<i class="fas fa-briefcase fa-3x"></i>
+			<h3>Portfolio</h3>
+			<p>
+				<img src="resume/images/c-programming.png">
+				<img src="resume/images/cpp_logo.png">
+				<img src="resume/images/csharp.png">
+			</p>
+			<p>A collection of small projects to showcase my abilities.</p>
+			</a>
+
+			<a href="./resume/index.html" class="btn">
+			<i class="far fa-envelope fa-3x"></i>
+			<h3>Contact</h3>
+			<p>Leave me a message if you'd like to know more.</p>
+			</a>
+	</section>
+
+	<section class="about bg-light">
+		<div class="container">
+			<div class="grid-2">
+				<div class="center">
+					<i class="fas fa-laptop-code fa-10x"></i>
+
+				</div>
+				<div>
+					<h3>About Me</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>	
 		</div>
 		
-		<div id="images">
-			<div id="header">
-				<h2>My Work</h2>
-			</div>
-			<img src="https://source.unsplash.com/1600x900/?nature,fire" alt="">
-			<div class="caption">
-				<h3>Static HTML/CSS Resume</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>			<div id="header">
-				<h2>My Work</h2>
-			</div>
-			<img src="https://source.unsplash.com/1600x900/?nature,storm" alt="">
-			<div class="caption">
-				<h3>Project 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>			<div id="header">
-				<h2>My Work</h2>
-			</div>
-			<img src="https://source.unsplash.com/1600x900/?nature,water" alt="">
-			<div class="caption">
-				<h3>Project 3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>			<div id="header">
-				<h2>My Work</h2>
-			</div>
-			<img src="https://source.unsplash.com/1600x900/?nature,wood" alt="">
-			<div class="caption">
-				<h3>Project 4</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>			<div id="header">
-				<h2>My Work</h2>
-			</div>
-			<img src="https://source.unsplash.com/1600x900/?nature,stone" alt="">
-			<div class="caption">
-				<h3>Project 5</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</div>
-		</div>
-	</main>
-	<footer>
-		<h3>Get in touch</h3>
-		<p>Email me to arrange an interview.</p>
-		<p>Email: <strong>info@davemack.github.io</strong></p>
+	</section>
+	<footer class="center bg-dark">
+		<p>David Mackenzie &copy; 2019</p>
 	</footer>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
