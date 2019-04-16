@@ -3,14 +3,13 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	box-sizing: border-box;
 }
 
 body{
-	font-family: 'Roboto Condensed', sans-serif;
-	background-color: #fff;
-	padding: 5px;
-	margin: 5px;
+	width: 90vw;
+	margin: auto;
 }
 
 img{
@@ -23,22 +22,9 @@ img{
 }
 
 .container{
-	width: 90%;
-	min-width: 500px;
+	min-width: 360px;
 	margin: auto;
-}
-
-.name{
-	background-color: #fff;
-	float: left;
-	box-sizing: border-box;	
-	padding: 10px;
-}
-
-.colourBlock{
-	background-color: blue;
-	width: 100%;
-	min-height: 50px;
+	text-align: left;
 }
 
 .top{
@@ -63,19 +49,54 @@ img{
 	display: inline;
 }
 
+.name {
+	position: relative;
+	display: inline-block;
+}
+
+.name::before {
+	content: '';
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	z-index: -1;
+	left: -1rem; 
+	right: -1rem; 
+}
+
+.name::after {
+	content: '';
+	background-color: blue;
+	height: 100%;
+	display: block;
+	position: absolute;	
+	width: 90vw;
+	top: 0;
+	z-index: -2;
+}
 
 .menu{
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	overflow: hidden;
-	justify-items: start;
+	justify-content: start;
 	padding: 5px;
 	margin: 5px;	
-
+	top: 0;
 }
 
+.menu::after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+	background-color: red;
+}
+
+
 .menu h3{
+	font-size: 2.5rem;
 }
 
 .menuItem{
@@ -87,14 +108,14 @@ img{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-auto-rows: minmax(150px, auto);
-	justify-items: end;
+	justify-content: end;
 	align-items: start;
 	max-height: 40px;
 }
 
 .icon{
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 4fr;
 	align-items: start;
 	min-width: 150px;
 }
@@ -110,13 +131,18 @@ img{
 }
 
 .icon p{
-	float: left;
 	color: #000;
 	align-self: center;
   white-space: nowrap; 	
   overflow: hidden;
   text-overflow: clip;
-	font-size: 10pt;
+	font-size: .7rem;
+}
+
+.title {
+	border-bottom: solid 2px #444;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .title img{
@@ -129,33 +155,33 @@ img{
 	display: inline-block;
 	margin: 0;
 	box-sizing: border-box;		
-	border-bottom: solid 2px #000;
+	padding-left: 1em;
 
 }
 
 #summary{
-	padding: 5px;
-	margin: 5px;
-	border: 1px solid black;
-	border-radius: 9px;
-	background-color: #eee;
+
 }
 
 #both{
 	display: grid;
 	grid-template-columns: 2fr 3fr;
+	grid-gap: 1em;
 }
 
-.edu-entry{
-	padding: 5px;
-	margin: 5px;	
-	border: 1px solid black;
+.card, .edu-entry, .exp-entry{
+	padding: 1rem;
+	margin: .5rem;
+//	border: 1px solid black;
 	border-radius: 9px;
-	background-color: #eee;
+	background-color: #ddd;
 }
+
+
 .edu-detail{
+	padding-top: 1em;
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
 }
 
 .edu-detail div{
@@ -191,11 +217,6 @@ img{
 .exp-entry{
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	padding: 5px;
-	margin: 5px;
-	border: 1px solid black;
-	border-radius: 9px;
-	background-color: #eee;
 }
 
 .exp-entry #jobtitle{
@@ -216,12 +237,13 @@ img{
 	padding-top: 1em;
 }
 
+
 .skills .wrapper{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 4fr;
 	padding: 5px;
 	margin: 5px;
-	border: 1px solid black;
+//	border: 1px solid black;
 	border-radius: 9px;
 	background-color: #eee;
 }
@@ -229,11 +251,31 @@ img{
 .progress {
   width: 100%;
   background-color: grey;
+  border-radius: 5px;
 }
 
 .bar {
-  width: 1%;
-  height: 30px;
+	width = calc(this.innerText);
+  height: 100%;
   background-color: green;
-  transition: width 1s ease-in-out;
+  color: transparent;
+  border-radius: 5px;
+  transition: width 2s ease-in-out;
+}
+
+.achievements a{
+	padding: 1em;
+}
+
+@media(max-width: 700px) {
+
+	.icons{
+		grid-template-columns: 1fr;
+	}
+
+	#both{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
 }
